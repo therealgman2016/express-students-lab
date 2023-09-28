@@ -1,0 +1,12 @@
+<body>
+    <h1>All Students</h1>
+    <ul>
+      <% Students.forEach(function(s) { %>
+        <li>
+          <%= s.todo %>
+            - 
+          <%= s.pass ? 'pass' : 'fail' %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
